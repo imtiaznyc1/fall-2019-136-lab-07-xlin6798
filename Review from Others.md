@@ -6,7 +6,7 @@
   ***//I gave user their own option to input a file path to test the program, I submitted the lab on Gradescope to test it***  
   
 * extraneous include directive for climits when there is no instance of using climits variables  
-  ***//Those were the header lines that were provided by Professor Genady for Lab 3. Reference --> https://maryash.github.io/135/labs/lab_03.html  ***
+  ***//Those were the header lines that were provided by Professor Genady for Lab 3. Reference --> https://maryash.github.io/135/labs/lab_03.html
   
 * program runs correctly but excessive use of function calls for countChar() decrease readability (possible solution is to store value into a variable)  
   ***//I will try to use a variable***  

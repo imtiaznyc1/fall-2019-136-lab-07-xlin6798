@@ -47,7 +47,7 @@ std::string fixFormat(std::string str)
   return retLine;
 }
 
-std::string removeLeadingSpaces(std::string line) 
+std::string removeLeadingSpaces(std::string line)
 {
   int i = 0;
   while (isspace(line.at(i)) && i < line.size() - 1)
@@ -59,6 +59,33 @@ std::string removeLeadingSpaces(std::string line)
 
 int countChar(std::string line, char c)
 {
+  /*
+  int start = 0;
+  int end = 0;
+
+  for(char i: line){
+    if(i == '/')
+      start++;
+      break;
+
+    start++;
+  }
+
+  end = start;
+  for(int i = start+1; i<line.length(); i++){
+    if(line[i] == '/'){
+      end++;
+      break;
+    }
+  }
+
+  for(int i = start; i<=end; i++){
+    if(line[i] == '}' || line[i] == '{'){
+      return 0;
+    }
+  }
+  */
+
   int count = 0;
   for (auto cc : line)
   {
@@ -67,4 +94,3 @@ int countChar(std::string line, char c)
   }
   return count;
 }
-
